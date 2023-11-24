@@ -1,0 +1,5 @@
+packages:
+  - "infrastructure"
+  - "packages/*"
+  - "actions/*"
+  - "services/*"
