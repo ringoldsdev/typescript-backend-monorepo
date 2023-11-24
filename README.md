@@ -40,3 +40,8 @@ This repo uses husky with @commitlint/cli so all your commit messages must follo
 
 Since this a monorepo, every commit must contain the modified workspace name. It forces you to create one commit for one workspace so that your work becomes more trackable.
 
+## Known issues
+
+1. If you're using VSCode and installed NVM after you've already installed NodeJs, you'll need to run `nvm alias default node` so that whatever NodeJs version you're using becomes the default one, otherwise you won't be able to commit changes without running into nodejs engine errors.
+
+2. In Ubuntu `pre-push` hook doesn't work when using the UI. You need to manually do `git push` so that the hook gets triggered.
