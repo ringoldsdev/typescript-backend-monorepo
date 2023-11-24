@@ -4,10 +4,12 @@
   "description": "Modern typescript monorepo template for backend projects",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "test": "echo \"Test script will be here\"",
     "test:e2e": "echo \"e2e test script will be here\"",
-    "prepare": "husky install",
-    "commitlint": "commitlint --edit"
+    "lint": "echo \"lint script will be here\"",
+    "commitlint": "commitlint --edit",
+    "pre-push": "pnpm lint && pnpm test"
   },
   "keywords": [],
   "author": "",
