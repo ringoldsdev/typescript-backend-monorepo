@@ -9,8 +9,7 @@
     "test:e2e": "echo \"e2e test script will be here\"",
     "lint": "echo \"lint script will be here\"",
     "husky-commit-msg": "commitlint --edit ${1}",
-    "husky-pre-push-old": "pnpm lint && pnpm test",
-    "husky-pre-push": "exit 1"
+    "husky-pre-push": "pnpm lint && pnpm test"
   },
   "keywords": [],
   "author": "",
