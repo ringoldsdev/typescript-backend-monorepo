@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Test script will be here\"",
+    "test:e2e": "echo \"e2e test script will be here\"",
     "prepare": "husky install",
     "commitlint": "commitlint --edit"
   },
