@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Modern typescript monorepo template for backend projects",
   "main": "index.js",
+  "engines": {
+    "npm": ">=10",
+    "node": ">=20"
+  },
   "scripts": {
     "prepare": "rm -rf .git/hooks/ && husky install",
     "test": "echo \"Test script will be here\"",
