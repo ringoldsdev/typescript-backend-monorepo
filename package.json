@@ -1,0 +1,16 @@
+{
+  "name": "typescript-backend-monorepo",
+  "version": "1.0.0",
+  "description": "Modern typescript monorepo template for backend projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test script will be here\"",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^8.0.3"
+  }
+}
