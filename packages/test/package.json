@@ -4,16 +4,20 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Test script will be here\"",
-    "test:e2e": "echo \"e2e test script will be here\"",
-    "lint": "echo \"lint script will be here\""
+    "test": "jest -c ./jest.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "peerDependencies": {
-    "@types/node": "^20.10.0",
-    "eslint": "^8.54.0",
-    "typescript": "^5.3.2"
+  "devDependencies": {
+    "@types/jest": "29.5.10",
+    "@types/node": "20.10.0",
+    "eslint": "8.54.0",
+    "jest": "29.7.0",
+    "ts-jest": "29.1.1",
+    "typescript": "5.3.2"
+  },
+  "dependencies": {
+    "@packages/test": "workspace:^"
   }
 }
