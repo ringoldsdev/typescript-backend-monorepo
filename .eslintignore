@@ -2,3 +2,4 @@ node_modules
 /packages/**/dist
 /actions/**/dist
 /services/**/dist
+pnpm-lock.yaml
