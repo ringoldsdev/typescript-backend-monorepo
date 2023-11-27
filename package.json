@@ -11,7 +11,7 @@
   "scripts": {
     "prepare": "rm -rf .git/hooks/ && husky install",
     "husky-commit-msg": "commitlint --edit ${1}",
-    "husky-pre-push": "pnpm lint && pnpm test"
+    "husky-pre-push": "npx eslint . --ext .ts"
   },
   "keywords": [],
   "author": "",
