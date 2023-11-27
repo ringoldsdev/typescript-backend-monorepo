@@ -1,0 +1,25 @@
+{
+  "name": "@services/test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Test script will be here\"",
+    "test:e2e": "echo \"e2e test script will be here\"",
+    "lint": "echo \"lint script will be here\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "@types/node": "^20.10.0",
+    "eslint": "^8.54.0",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@packages/test": "workspace:^"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1"
+  }
+}
