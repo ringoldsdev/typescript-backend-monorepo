@@ -1,4 +1,1 @@
-module.exports = {
-  ...require("../../jest.config"),
-  rootDir: "./",
-};
+module.exports = require("../../jest.config");
