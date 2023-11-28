@@ -13,7 +13,7 @@
     "prepare": "rm -rf .git/hooks/ && husky install",
     "husky-commit-msg": "commitlint --edit ${1}",
     "husky-pre-push": "npx eslint . --ext .ts",
-    "test": "jest -c ./jest.config.js"
+    "test": "pnpm "
   },
   "keywords": [],
   "author": "",

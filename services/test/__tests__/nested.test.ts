@@ -1,4 +1,4 @@
-import { outputMessage } from "../src/nested";
+import { outputMessage } from "@services/test/nested";
 
 describe("nested", () => {
   it("should output a message", () => {
