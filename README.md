@@ -36,6 +36,16 @@ You'll notice there are two test scripts: `test` and `test:e2e`. The reason for 
 
 Initially you'll be able to run all tests locally without issues, but once your test suite contains hundreds of tests, including a lot of E2E ones, you might want to offload running these tests to the CI pipeline.
 
+There are two ways how to run tests: individually or all at once.
+
+To run tests individually, you either CD into the package, action, or service and run `pnpm test`.
+
+To run all tests at once, run `pnpm test` from the root.
+
+Commands are the same but mechanisms are very different. If you take a look at the root `jest.config.js` you'll notice that settings get derived programmatically based on what packages, actions, and services are found and are considered valid. Valid ones are those that contain a child `jest.config.js` and contents of that config file get used in the root config file. It's done this way so that we wouldn't have to deal with file path errors.
+
+If you want to create your own version root `jest.config.js`, create a copy of the file with a different name, implement your own resolution mechanism and add a new script in root `package.json` that uses a different config file.
+
 ### TestContainers
 
 I've tried going down the road of mocking my way through tests but you can only do that much. I'm talking about mocking databases. That becomes incredibly challenging when you have business logic in the database owned by a different team, because you're either always playing catchup or you're introducing bugs without you knowing. If you use TestContainers you can easily launch a fully functional copy of the database with all migrations and seeds applied and run your tests. Then it's a matter of pulling in the latest version of the database and running your tests against it.
