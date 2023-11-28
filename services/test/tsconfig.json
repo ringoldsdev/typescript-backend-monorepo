@@ -1,12 +1,11 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "rootDir": "src",
-    "outDir": "dist"
+    "outDir": "dist",
+    "composite": true,
+    "rootDir": ".",
+    "baseUrl": "src",
+    "module": "commonjs"
   },
-  "references": [
-    {
-      "path": "../../packages/test"
-    }
-  ]
+  "include": ["src"]
 }

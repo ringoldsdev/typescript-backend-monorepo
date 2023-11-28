@@ -4,6 +4,7 @@
   "description": "Modern typescript monorepo template for backend projects",
   "main": "index.js",
   "private": true,
+  "type": "commonjs",
   "engines": {
     "npm": ">=10",
     "node": ">=20"
@@ -11,7 +12,8 @@
   "scripts": {
     "prepare": "rm -rf .git/hooks/ && husky install",
     "husky-commit-msg": "commitlint --edit ${1}",
-    "husky-pre-push": "npx eslint . --ext .ts"
+    "husky-pre-push": "npx eslint . --ext .ts",
+    "test": "jest -c ./jest.config.js"
   },
   "keywords": [],
   "author": "",
