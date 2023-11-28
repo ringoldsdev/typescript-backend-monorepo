@@ -9,8 +9,9 @@ Node v20, Typescript, Jest, TestContainers, Github Actions, Postgres, Knex, Pulu
 ## Setup
 
 0. Install `nvm` ([see here](https://github.com/nvm-sh/nvm#installing-and-updating))
-1. From the project root run `pnpm prepare`. You need to run it from the root so that husky gets set up properly
-2. Run `nvm use`
+1. Run `nvm use`
+2. From the project root run `pnpm prepare`. You need to run it from the root so that husky gets set up properly
+3. Run `pnpm install` from the project root
 
 ## Structure
 
