@@ -1,7 +1,7 @@
-import { outputMessage } from "@services/test/nested";
+import { outputMessage } from "@src/nested";
 
 describe("nested", () => {
   it("should output a message", () => {
-    expect(outputMessage()).toEqual("Hello world!");
+    expect(outputMessage()).toEqual("Hello worlds!");
   });
 });

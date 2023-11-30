@@ -70,3 +70,5 @@ Since this a monorepo, every commit must contain the modified workspace name. It
 3. Prettier ESLint
 4. Jest
 5. Todo+
+
+TODO: figure out whether it's possible to use turborepo with circular dependencies as existing setup just complicates everything
