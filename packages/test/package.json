@@ -2,10 +2,19 @@
   "name": "@packages/test",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
+  "tsup": {
+    "entry": [
+      "src/index.ts"
+    ],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true,
+    "cjsInterop": true
+  },
   "scripts": {
     "test": "jest -c ./jest.config.js",
-    "build": "tsc -p ./tsconfig.build.json && tsc-alias",
+    "build": "tsup-node && tsc -p ./tsconfig.build.json --emitDeclarationOnly --declaration",
     "lint": "eslint . --ext .ts"
   },
   "keywords": [],
@@ -19,8 +28,7 @@
     "ts-jest": "29.1.1",
     "tsc-alias": "^1.8.8",
     "tsconfig-paths": "4.2.0",
+    "tsup": "^8.0.1",
     "typescript": "5.3.2"
-  },
-  "dependencies": {},
-  "_moduleAliases": {}
+  }
 }
